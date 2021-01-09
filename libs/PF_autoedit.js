@@ -12,6 +12,9 @@
 
 	var autoEditHandler = function handleAutoEdit(){
 
+		var zClick2Confirm = confirm("The button you just clicked is about to make an edit on your behalf. If you are sure you want to proceed with this edit, click OK.");
+		if (zClick2Confirm) { } else { return; }
+		
 		if ( mw.config.get( 'wgUserName' ) === null &&
 			! confirm( mw.msg( 'pf_autoedit_anoneditwarning' ) ) ) {
 
