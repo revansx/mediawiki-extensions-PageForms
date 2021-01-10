@@ -27,7 +27,7 @@
                 // alert( jtrigger.html().includes("Click to approve") );
 
                 if ( jtrigger.html().includes("Click to approve") > 0 ) {
-                        var zClick2Confirm = confirm("The button you just clicked is about to make an edit on your behalf. If you are sure you want to proceed with this edit, click OK.");
+                        var zClick2Confirm = confirm("The button you just clicked labeled \n\n[" + jtrigger.text()  + "]\n\n is about to make an edit on your behalf. If you are sure you want to proceed with this edit, click OK.");
                         if (zClick2Confirm) { } else { return; }
                 }
 		
